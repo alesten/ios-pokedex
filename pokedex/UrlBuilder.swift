@@ -15,4 +15,8 @@ class UrlBuilder {
     static func getUrlForPokemon(pokedexId: Int) -> String {
         return "\(URL_BASE)\(URL_POKEMON)\(pokedexId)"
     }
+    
+    static func getUrlWithBasePrefix(url: String) -> String {
+        return "\(URL_BASE)\(url)"
+    }
 }
